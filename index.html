@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
         .header{
-            background: url(meo.jpg);
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
             font-weight: <weight>;
@@ -49,7 +48,13 @@
         .header .menu ul li a:hover{
             color: plum;
         }
-        .header .info{
+        .contain{
+            display: flex;
+        }
+        .contain .image img{
+            justify-items: end;
+        }
+        .contain .info{
             width: 100%;
             color: white;
             padding: 200px;
@@ -58,6 +63,10 @@
         }
         .red{
             color: black;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: 1;
+            font-weight: auto;
+            font-size: 50px;
         }
         .theme{
             color: #b89c08;
@@ -95,10 +104,15 @@
              </ul>
             </div>
         </div>
-        <div class="info">
-            <h1> <span class="theme">Rockstar treatment for your pet </span></h1> <br>
-            <h1><span class="red"> GROOMING WITH GENTLE CARE. </span></h1>
-            <button>CONTACT US</button>
+        <div class="contain">
+            <div class="info">
+                <h1> <span class="theme">Rockstar treatment for your pet </span></h1> <br>
+                <h1><span class="red"> GROOMING WITH GENTLE CARE. </span></h1>
+                <button>CONTACT US</button>
+            </div>
+            <div class="image">
+                <img src = "meo.jpg" alt="">
+            </div>  
         </div>
     </div>
 </body>
